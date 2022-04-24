@@ -1,4 +1,4 @@
-#root, html, body{
+#root, html, body {
   height: 100vh;
 }
 
@@ -7,14 +7,10 @@ body {
   background-color: whitesmoke;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
