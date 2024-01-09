@@ -1,6 +1,6 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/system';
 
-export default makeStyles((theme) => ({
+export default styled((theme) => ({
   footer: {
     textAlign: 'center',
     // position: 'fixed',
@@ -30,9 +30,10 @@ export default makeStyles((theme) => ({
     width: '50%',
     padding: '3%',
     borderRadius: 10,
-    color: 'white',
-    backgroundColor: 'rgba(21, 101, 192)',
+    color: '#000',
+    backgroundColor: '#c8e3e2',
     margin: '0 12px',
+    marginBottom: '25px',
     textAlign: 'center',
     height: '25vmin',
     [theme.breakpoints.down('sm')]: {

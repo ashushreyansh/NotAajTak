@@ -4,8 +4,8 @@ export default function Header() {
   return (
     <div className="header">
       <div className="headerTitles">
-        <span className="headerTitleSm">With Conversational Ai</span>
         <span className="headerTitleLg">NewsApp</span>
+        <span className="headerTitleSm">With Conversational Ai</span>
       </div>
       <img
         className="headerImg"

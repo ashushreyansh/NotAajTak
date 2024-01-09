@@ -1,10 +1,13 @@
 import React from 'react';
 import NewsCard from './NewsCard/NewsCard';
-import { Grid, Grow, Typography } from '@material-ui/core';
+import { Grid, Grow, Typography } from '@mui/material';
 import useStyles from './CardsStyles.js';
 
 const infoCards = [
-    { color: '#00838f', title: 'Latest News', text: 'Give me the latest news' },
+    { 
+        color: '#00838f',
+        title: 'Latest News',
+        text: 'What is the latest news' },
     {
         color: '#1565c0',
         title: 'News by Categories',
@@ -48,20 +51,22 @@ const NewsCards = ({ articles, activeArticle }) => {
                         >
                             <div
                                 className={classes.card}
-                                style={{ backgroundColor: infoCard.color }}
+                                style={{ backgroundColor: "#c8e3e2", color: "#000", boxShadow: "0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24)" }}
                             >
                                 <Typography variant='h5' component='h5'>
                                     {infoCard.title}
                                 </Typography>
+                                <br></br>
                                 {infoCard.info ? (
                                     <Typography variant='h6' component='h6'>
                                         <strong>
                                             {infoCard.title.split(' ')[2]}
                                         </strong>
                                         : <br />
-                                        {infoCard.info}
+                                        <i>{infoCard.info}</i>
                                     </Typography>
                                 ) : null}
+                                <br></br>
                                 <Typography variant='h6' component='h6'>
                                     Try saying: <br /> <i>{infoCard.text}</i>
                                 </Typography>

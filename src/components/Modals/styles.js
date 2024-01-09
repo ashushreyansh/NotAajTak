@@ -1,6 +1,6 @@
-import { makeStyles } from '@material-ui/core/styles';
+import { styled } from '@mui/system';
 
-export default makeStyles((theme) => ({
+export const useStyles = styled((theme) => ({
   paper: {
     position: 'absolute',
     backgroundColor: theme.palette.background.paper,

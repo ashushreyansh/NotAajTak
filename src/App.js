@@ -7,7 +7,7 @@ import Modal from './components/Modals/Modal';
 import wordsToNumbers from 'words-to-numbers';
 import Topbar from './topbar/topbar';
 import Home from './pages/homepage/Home';
-import { Typography } from '@material-ui/core';
+import { Typography } from '@mui/material';
 import useStyles from './styles';
 
 const alanKey =
@@ -24,7 +24,7 @@ const App = () => {
             key: alanKey,
             onCommand: ({ command, articles, number }) => {
                 if (command === 'newHeadlines') {
-                    console.log(articles);
+                    // console.log(articles);
                     setNewsArticles(articles);
                     setActiveArticle(-1);
                 } else if (command === 'instructions') {
@@ -71,12 +71,12 @@ const App = () => {
                 <div className={classes.footer}>
                 <Typography variant="body1" component="h2">
                     Created by
-                    <a className={classes.link} href="https://www.linkedin.com/in/shreyansh-chaurasia-5910781a9/"> Shreyansh Chaurasia</a> -
-                    <a className={classes.link} href="https://www.linkedin.com/in/ritik-agarwal-a55317161/"> Ritik Agarwal</a>
+                    <a className={classes.link} href="https://www.linkedin.com/in/shreyansh-chaurasia-5910781a9/" target={"_blank"} rel="noreferrer"> Shreyansh Chaurasia</a> -
+                    <a className={classes.link} href="https://www.linkedin.com/in/ritik-agarwal-a55317161/" target={"_blank"} rel="noreferrer"> Ritik Agarwal</a>
                 </Typography>
                 </div>
             ) : null}
-            <div class='alan-btn'></div>
+            {/* <div class='alan-btn'></div> */}
         </div>
     );
 };
